@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Validation App</title>
+</head>
+
+<body>
+    <header class="bg-red-400">
+        <p class="text-3xl font-bold text-white text-center p-3">Validation Checker</p>
+    </header>
+    <div class="container mx-auto p-3 pt-40 items-center justify-center">
+        <div class="over">
+            <form class="flex flex-col items-center justify-center">
+                <div class="flex flex-row mr-3 mb-3 md:mb-0 md:flex-row ">
+                    <label for="options" class="text-lg font-bold mr-2">Choose an
+                        Option:</label>
+                    <select id="options" name="option"
+                        class="text-lg text-center block border-gray-300 rounded-md sm:w-36 md:w-80 lg:w-80 focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        <option value="select" class="" selected>--Select--</option>
+                        <option value="email">Email</option>
+                        <option value="phone-number">Phone Number</option>
+                        <option value="post-code">Post Code</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit" class="bg-red-200 p-3 px-6 rounded-full mt-5 md:mt-9 md:ml-3 active" id="next">NEXT</button>
+                </div>
+            </form>
+        </div>
+        <div class="items-center text-center mt-8">
+            <button class="valid text-2xl font-bold bg-green-500 rounded p-3 px-10 hidden">VALID</button>
+            <button class="unvalid text-2xl font-bold bg-red-700 rounded p-3 px-10 hidden">UNVALID</button>
+        </div>
+        <div class="pop-input mt-6 grid grid-cols-1 md:grid-cols-1 gap-4  hidden">
+            <input type="text" name="" id="input"
+                class="border border-2 border-red-300 w-full h-10 rounded-md text-center">
+            <button type="submit" class="bg-red-200 p-3 px-6 rounded-full w-full md:w-auto" id="check">CHECK</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
