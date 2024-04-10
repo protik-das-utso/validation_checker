@@ -9,7 +9,6 @@ let un_valid = document.querySelector(".unvalid");
 
 
 let re_email = /^(?!.*\.\.)[a-zA-Z0-9.%_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
 let re_phone = /^(\+?88)?01[3456789][0-9]{8}$/;
 let re_post = /^[0-9]{4}$/;
 
